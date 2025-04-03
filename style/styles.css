@@ -86,7 +86,7 @@ a {
     justify-content: center;
     width: 100%;
     height: 950px;
-    background-image: url('/src/img/banner.webp'); /* Thay 'your-banner-image.jpg' bằng đường dẫn thực tế */
+    background-image: url('./src/img/banner.webp'); /* Thay 'your-banner-image.jpg' bằng đường dẫn thực tế */
     background-size: cover;
     background-position: center;
     color: white;
