@@ -24,6 +24,18 @@ a {
     text-align: center;
   }
   
+  .header::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    background: rgba(63, 63, 63, 0.4);
+    filter: blur(7px);
+    pointer-events: none;
+  }
+
   .header__title {
     color: #FBF6E9;
     font-size: 36px;
