@@ -10,3 +10,7 @@ teamMembers.forEach((member) => {
     this.style.transform = "scale(1)";
   });
 });
+
+const alertMess = () => {
+  alert("Giảm 20%");
+}
