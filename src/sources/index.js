@@ -1,8 +1,13 @@
-const navLinks = document.querySelectorAll('.header__nav-link');
+// Example JavaScript to handle form submission (basic demonstration)
+document
+  .querySelector(".contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    const name = document.querySelector('input[type="text"]').value;
+    const email = document.querySelector('input[type="email"]').value;
+    const message = document.querySelector("textarea").value;
 
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.forEach(navLink => navLink.classList.remove('active'));
-    link.classList.add('active');
+    alert(
+      `Thank you for contacting us, ${name}! We will get back to you soon.`
+    );
   });
-});
