@@ -460,12 +460,17 @@ a {
 
 .flex-container {
   display: flex;
-  flex-direction: column; /* Đặt phần tử theo chiều dọc */
-  justify-content: center; /* Căn giữa các phần tử dọc theo trục chính */
-  align-items: center; /* Căn giữa các phần tử theo trục phụ */
-  height: 300px; /* Chiều cao của container */
+  flex-direction: column;
+  /* Đặt phần tử theo chiều dọc */
+  justify-content: center;
+  /* Căn giữa các phần tử dọc theo trục chính */
+  align-items: center;
+  /* Căn giữa các phần tử theo trục phụ */
+  height: 300px;
+  /* Chiều cao của container */
   background-color: #f4f4f4;
 }
+
 .box {
   background-color: #3498db;
   color: white;
@@ -475,10 +480,13 @@ a {
   text-align: center;
   border-radius: 8px;
 }
+
 .bottom-left,
 .bottom-right {
-  display: inline-block; /* Để 2 box ở dưới có thể nằm ngang */
-  width: 45%; /* Chiếm 45% chiều rộng của container */
+  display: inline-block;
+  /* Để 2 box ở dưới có thể nằm ngang */
+  width: 45%;
+  /* Chiếm 45% chiều rộng của container */
 }
 
 .flex-item {
@@ -505,8 +513,9 @@ a {
 
 .about-us h2 {
   font-size: 2rem;
-  margin:40px 0;
+  margin: 40px 0;
 }
+
 .header-content {
   width: 100%;
   height: 500px;
@@ -521,8 +530,9 @@ a {
   padding: 10px 20px;
   text-align: center;
 }
-.header-content h1 {
-}
+
+.header-content h1 {}
+
 .about-content {
   display: flex;
   justify-content: space-around;
@@ -603,30 +613,36 @@ footer {
   padding: 20px;
   margin-top: 50px;
 }
+
 .left-column {
   background-color: #f5f5f5;
   border-radius: 10px;
   flex-direction: column;
   justify-content: center;
 }
+
 .center-column {
   background-color: #f5f5f5;
   border-radius: 10px;
 }
+
 .right-column {
   background-color: #f5f5f5;
   border-radius: 10px;
 }
+
 .box-thongtin {
   background-color: #fff;
   border-radius: 10px;
 }
+
 .box-trian {
   box-sizing: border-box;
   background-color: #f87b07;
   border-radius: 10px;
   display: flex;
 }
+
 .box-uudiem {
   width: 200px;
   justify-content: space-around;
@@ -641,18 +657,24 @@ footer {
   display: flex;
   padding: 20px;
   border-radius: 10px;
-  align-items: center; /* Căn giữa nội dung theo chiều dọc */
-  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
-  width: 40%; /* Chiếm 50% chiều rộng của container (2 cột) */
-  height: max-content; /* Chiếm 50% chiều cao của container (2 hàng) */
+  align-items: center;
+  /* Căn giữa nội dung theo chiều dọc */
+  justify-content: center;
+  /* Căn giữa nội dung theo chiều ngang */
+  width: 40%;
+  /* Chiếm 50% chiều rộng của container (2 cột) */
+  height: max-content;
+  /* Chiếm 50% chiều cao của container (2 hàng) */
   background-color: #fff;
   color: #000;
   font-size: 10px;
   flex-direction: column;
 }
+
 .flex-box h2 {
   font-size: 20px;
 }
+
 .flex-box i {
   font-size: 24px;
 }
