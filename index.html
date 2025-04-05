@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <title>Trang chủ</title>
   <link rel="stylesheet" href="./style/styles.css">
 </head>
@@ -19,8 +21,8 @@
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item"><a href="./index.html" class="header__nav-link active">Trang chủ</a></li>
-        <li class="header__nav-item"><a href="#single-tours" class="header__nav-link">Tour</a></li>
         <li class="header__nav-item"><a href="#discovery" class="header__nav-link">Khám phá</a></li>
+        <li class="header__nav-item"><a href="./page/tour.html" class="header__nav-link">Tour</a></li>
         <li class="header__nav-item"><a href="./page/contact.html" class="header__nav-link">Liên hệ</a></li>
       </ul>
     </nav>
@@ -101,20 +103,20 @@
         </div>
       </div>
     </section>
-    <section id="discovery" class="main__destinations">
+    <section id="discovery" class="main__destinations row">
       <h3 class="main__destinations-title">Địa điểm nổi bật</h3>
       <div class="main__destinations-list">
-        <div class="destination-card">
+        <div class="destination-card col-md-3">
           <img src="./src/img/phuquoc.jpg" alt="Phú Quốc" class="destination-card__image">
           <h4 class="destination-card__title">Phú Quốc</h4>
           <p class="destination-card__description">Đảo ngọc với bãi biển trắng mịn và nước biển trong xanh.</p>
         </div>
-        <div class="destination-card">
+        <div class="destination-card col-md-3">
           <img src="./src/img/hanoi.jpg" alt="Hà Nội" class="destination-card__image">
           <h4 class="destination-card__title">Hà Nội</h4>
           <p class="destination-card__description">Thủ đô Hà Nội với những di tích lịch sử và văn hóa đặc sắc.</p>
         </div>
-        <div class="destination-card">
+        <div class="destination-card col-md-3">
           <img src="./src/img/danang.jpg" alt="Đà Nẵng" class="destination-card__image">
           <h4 class="destination-card__title">Đà Nẵng</h4>
           <p class="destination-card__description">Khám phá các bãi biển tuyệt đẹp và các khu du lịch nổi tiếng như
@@ -122,24 +124,24 @@
         </div>
       </div>
     </section>
-    <section class="main__services">
+    <section class="main__services row">
       <h3 class="main__services-title">Dịch vụ của chúng tôi</h3>
       <div class="main__services-list">
-        <div class="service-card">
+        <div class="service-card col-lg-2">
           <h4 class="service-card__title">📦 Tour du lịch trọn gói</h4>
           <p class="service-card__description">Chúng tôi cung cấp tour du lịch trọn gói từ A đến Z, giúp bạn có chuyến
             đi hoàn hảo.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card col-lg-2">
           <h4 class="service-card__title">🛡️ Bảo hiểm du lịch</h4>
           <p class="service-card__description">Mỗi tour đều kèm theo bảo hiểm du lịch, đảm bảo an tâm trong suốt hành
             trình.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card col-lg-2">
           <h4 class="service-card__title">🚌 Phương tiện đưa đón</h4>
           <p class="service-card__description">Dịch vụ xe đưa đón tận nơi, tiện lợi và an toàn cho bạn.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card col-lg-2">
           <h4 class="service-card__title">📞 Hỗ trợ 24/7</h4>
           <p class="service-card__description">Đội ngũ tư vấn viên sẵn sàng hỗ trợ mọi lúc, mọi nơi.</p>
         </div>
@@ -176,11 +178,41 @@
       <button class="main__offers-button" onclick="alertMess()">Xem các ưu đãi</button>
     </section>
   </main>
-  <footer class="footer">
-    <p class="footer__text">© 2025 MTV Travel. Tất cả các quyền được bảo lưu.</p>
+  <!-- Footer -->
+  <footer class="bg-grey py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About MTV Travel</h5>
+          <p>We provide unforgettable travel experiences across Southeast Asia with expert local guides and personalized
+            itineraries.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-envelope me-2"></i> moxumxue@gmail.com</li>
+            <li><i class="fas fa-phone me-2"></i> +84 123 4567890</li>
+            <li><i class="fas fa-map-marker-alt me-2"></i> 97 Man Thien St, Thu Duc City</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2025 MTV Travel. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="./src/sources/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

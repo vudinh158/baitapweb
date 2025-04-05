@@ -1,173 +1,205 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cac Tour noi bat</title>
+  <title>Amie Travel - Destinations</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="../style/styles.css">
 </head>
-<style>
-  html {
-  scroll-behavior: smooth;
-  }
-</style>
+
 <body>
+  <!-- Header -->
   <header class="header">
-    <h1 class="header__title">MTV Travel</h1>
+    <h1 class="header__title fw-bold">MTV Travel</h1>
     <nav class="header__nav">
       <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="#" class="header__nav-link active">Trang chủ</a></li>
-        <li class="header__nav-item"><a href="./tour.html" class="header__nav-link">Tour</a></li>
-        <li class="header__nav-item"><a href="#single-tours" class="header__nav-link">Khám phá</a></li>
-        <li class="header__nav-item"><a href="#contact" class="header__nav-link">Liên hệ</a></li>
+        <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Trang chủ</a></li>
+        <li class="header__nav-item"><a href="#discovery" class="header__nav-link">Khám phá</a></li>
+        <li class="header__nav-item"><a href="./tour.html" class="header__nav-link active">Tour</a></li>
+        <li class="header__nav-item"><a href="./contact.html" class="header__nav-link">Liên hệ</a></li>
       </ul>
     </nav>
   </header>
-  <main class="main">
-<!-- <section class="main__hero">
-    <div class="main__hero-overlay">
-      <h2 class="main__hero-title">Web bán tour du lịch</h2>
-      <p class="main__hero-description">Chúng tôi cung cấp các tour du lịch chất lượng, đưa bạn đến những địa điểm tuyệt vời.</p>
-      <a class="main__button" href="#single-tours">Khám phá các tour</a>
+
+  <!-- Main Content -->
+
+  <!-- Destinations Header -->
+  <div class="mb-4">
+    <div class="tour-background">
+      <h1 style="font-size: 50px;">Điểm đến</h1>
+      <p>Lựa chọn đất nước hoặc thành phố để khám phá</p>
     </div>
-  </section> -->
-<section id="single-tours" class="main__single-tours">
-    <h3 class="main__single-tours-title">Các Tour Độc Quyền</h3>
-    <div class="main__single-tours-list">
-      <div class="single-tour-card">
-        <img src="../src/img/phuquoc.jpg" alt="Tour Phú Quốc" class="single-tour-card__image">
-        <h4 class="single-tour-card__title">Tour Phú Quốc</h4>
-        <p class="single-tour-card__description">Khám phá đảo ngọc Phú Quốc với những bãi biển tuyệt đẹp và các khu vui chơi thú vị.</p>
-        <button class="single-tour-card__button">Xem chi tiết</button>
+  </div>
+
+
+  <!-- Search and Filter -->
+  <div class="search-filter-container p-3 mb-5">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="search-container">
+          <input type="text" class="form-control" placeholder="Search country or city">
+        </div>
       </div>
-      <div class="single-tour-card">
-        <img src="../src/img/hanoi.jpg" alt="Tour Hà Nội" class="single-tour-card__image">
-        <h4 class="single-tour-card__title">Tour Hà Nội</h4>
-        <p class="single-tour-card__description">Tham quan các di tích lịch sử và thưởng thức đặc sản Hà Nội.</p>
-        <button class="single-tour-card__button">Xem chi tiết</button>
-      </div>
-      <div class="single-tour-card">
-        <img src="../src/img/danang.jpg" alt="Tour Đà Nẵng" class="single-tour-card__image">
-        <h4 class="single-tour-card__title">Tour Đà Nẵng</h4>
-        <p class="single-tour-card__description">Khám phá Đà Nẵng với các điểm du lịch nổi tiếng như Bà Nà Hills, Ngũ Hành Sơn.</p>
-        <button class="single-tour-card__button">Xem chi tiết</button>
-      </div>
-      <div class="single-tour-card">
-        <img src="../src/img/sapa.jpg" alt="Tour Sapa" class="single-tour-card__image">
-        <h4 class="single-tour-card__title">Tour Sapa</h4>
-        <p class="single-tour-card__description">Khám phá Sapa với những dãy núi hùng vĩ và bản làng dân tộc thiểu số.</p>
-        <button class="single-tour-card__button">Xem chi tiết</button>
-      </div>
-      <div class="single-tour-card">
-        <img src="../src/img/halong.webp" alt="Tour Hạ Long" class="single-tour-card__image">
-        <h4 class="single-tour-card__title">Tour Hạ Long</h4>
-        <p class="single-tour-card__description">Trải nghiệm Hạ Long với vịnh biển kỳ vĩ và các hoạt động vui chơi trên vịnh.</p>
-        <button class="single-tour-card__button">Xem chi tiết</button>
-      </div>
-      <div class="single-tour-card">
-        <img src="../src/img/ninhbinh.jpg" alt="Tour Ninh Bình" class="single-tour-card__image">
-        <h4 class="single-tour-card__title">Tour Ninh Bình</h4>
-        <p class="single-tour-card__description">Khám phá Ninh Bình với các danh lam thắng cảnh nổi tiếng như Tràng An, Tam Cốc.</p>
-        <button class="single-tour-card__button">Xem chi tiết</button>
-      </div>
-      <div class="single-tour-card">
-        <img src="../src/img/hoian.webp" alt="Tour Hội An" class="single-tour-card__image">
-        <h4 class="single-tour-card__title">Tour Hội An</h4>
-        <p class="single-tour-card__description">Khám phá vẻ đẹp cổ kính của phố cổ Hội An, thưởng thức ẩm thực độc đáo.</p>
-        <button class="single-tour-card__button">Xem chi tiết</button>
-      </div>
-      <div class="single-tour-card">
-        <img src="../src/img/saigon.jpg" alt="Tour Ho Chi Minh city" class="single-tour-card__image">
-        <h4 class="single-tour-card__title">Tour Cần Thơ</h4>
-        <p class="single-tour-card__description">Trải nghiệm miền Tây sông nước, tham quan chợ nổi Cái Răng, vườn cây ăn trái.</p>
-        <button class="single-tour-card__button">Xem chi tiết</button>
-      </div>
-      <div class="single-tour-card">
-        <img src="../src/img/vungtau.jpg" alt="Tour Vũng Tàu" class="single-tour-card__image">
-        <h4 class="single-tour-card__title">Tour Vũng Tàu</h4>
-        <p class="single-tour-card__description">Khám phá Vũng Tàu với các bãi biển đẹp và các điểm tham quan thú vị.</p>
-        <button class="single-tour-card__button">Xem chi tiết</button>
+      <div class="col-md-4">
+        <div class="d-flex align-items-center justify-content-end">
+          <span class="me-2">Sort by</span>
+          <select class="form-select sort-select">
+            <option selected>Ascending</option>
+            <option>Descending</option>
+            <option>Most Popular</option>
+            <option>Most Tours</option>
+          </select>
+        </div>
       </div>
     </div>
-  </section>
-  
-  
-    <!-- Dịch vụ của chúng tôi -->
-    <section class="main__services">
-      <h3 class="main__services-title">Dịch vụ của chúng tôi</h3>
-      <div class="main__services-list">
-        <div class="service-card">
-          <h4 class="service-card__title">Tour du lịch trọn gói</h4>
-          <p class="service-card__description">Chúng tôi cung cấp tour du lịch trọn gói từ A đến Z, giúp bạn có chuyến đi hoàn hảo.</p>
-        </div>
-        <div class="service-card">
-          <h4 class="service-card__title">Hướng dẫn viên chuyên nghiệp</h4>
-          <p class="service-card__description">Các hướng dẫn viên của chúng tôi sẽ giúp bạn hiểu rõ hơn về các điểm đến.</p>
-        </div>
-        <div class="service-card">
-          <h4 class="service-card__title">Vé máy bay giá tốt</h4>
-          <p class="service-card__description">Chúng tôi hợp tác với các hãng hàng không để cung cấp vé máy bay giá tốt cho khách hàng.</p>
-        </div>
-      </div>
-    </section>
-  
-<!-- Địa điểm nổi bật -->
-<section class="main__destinations">
-    <h3 class="main__destinations-title">Địa điểm nổi bật</h3>
-    <div class="main__destinations-list">
+  </div>
+
+  <!-- Destinations Grid -->
+  <div class="row g-4 tour-info">
+    <!-- Cambodia -->
+    <div class="col-md-6 col-lg-3">
       <div class="destination-card">
-        <img src="../src/img/phuquoc.jpg" alt="Phú Quốc" class="destination-card__image">
-        <h4 class="destination-card__title">Phú Quốc</h4>
-        <p class="destination-card__description">Đảo ngọc với bãi biển trắng mịn và nước biển trong xanh.</p>
-      </div>
-      <div class="destination-card">
-        <img src="../src/img/hanoi.jpg" alt="Hà Nội" class="destination-card__image">
-        <h4 class="destination-card__title">Hà Nội</h4>
-        <p class="destination-card__description">Thủ đô Hà Nội với những di tích lịch sử và văn hóa đặc sắc.</p>
-      </div>
-      <div class="destination-card">
-        <img src="../src/img/danang.jpg" alt="Đà Nẵng" class="destination-card__image">
-        <h4 class="destination-card__title">Đà Nẵng</h4>
-        <p class="destination-card__description">Khám phá các bãi biển tuyệt đẹp và các khu du lịch nổi tiếng như Bà Nà Hills.</p>
+        <div class="destination-image">
+          <img src="../src/img/tour-img/cambodia-2.jpg" alt="Cambodia">
+        </div>
+        <div class="destination-info">
+          <h3>Cambodia</h3>
+          <p>7 tours and activities</p>
+        </div>
       </div>
     </div>
-  </section>
-  
-  
-    <!-- Phản hồi khách hàng -->
-    <section class="main__testimonials">
-      <h3 class="main__testimonials-title">Phản hồi từ khách hàng</h3>
-      <div class="main__testimonials-list">
-        <div class="testimonial-card">
-          <p class="testimonial-card__text">"Chuyến đi đến Phú Quốc thật tuyệt vời! Chúng tôi đã có những kỷ niệm khó quên. Cảm ơn Amie Travel!"</p>
-          <p class="testimonial-card__author">- Nguyễn Thị Lan</p>
+
+    <!-- Da Nang -->
+    <div class="col-md-6 col-lg-3">
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="../src/img/tour-img/danang-2.png" alt="Da Nang">
         </div>
-        <div class="testimonial-card">
-          <p class="testimonial-card__text">"Dịch vụ của Amie Travel rất chuyên nghiệp, tôi sẽ tiếp tục chọn họ cho các chuyến đi trong tương lai."</p>
-          <p class="testimonial-card__author">- Trần Minh Tùng</p>
-        </div>
-        <div class="testimonial-card">
-          <p class="testimonial-card__text">"Chuyến đi Đà Nẵng rất tuyệt vời! Tôi rất ấn tượng với sự chuyên nghiệp của đội ngũ hướng dẫn viên."</p>
-          <p class="testimonial-card__author">- Lê Thị Hồng</p>
+        <div class="destination-info">
+          <h3>Da Nang</h3>
+          <p>6 tours and activities</p>
         </div>
       </div>
-    </section>
-  
-    <!-- Cập nhật ưu đãi -->
-    <section class="main__offers">
-      <h3 class="main__offers-title">Ưu đãi đặc biệt</h3>
-      <p class="main__offers-description">Đặt tour ngay hôm nay để nhận các ưu đãi hấp dẫn, giảm giá lên đến 20%!</p>
-      <button class="main__offers-button">Xem các ưu đãi</button>
-    </section>
-  
+    </div>
+
+    <!-- Halong Bay -->
+    <div class="col-md-6 col-lg-3">
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="../src/img/tour-img/halong-2.jpg" alt="Halong Bay">
+        </div>
+        <div class="destination-info">
+          <h3>Ha Long Bay</h3>
+          <p>7 tours and activities</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hanoi -->
+    <div class="col-md-6 col-lg-3">
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="../src/img/tour-img/hanoi.jpg" alt="Hanoi">
+        </div>
+        <div class="destination-info">
+          <h3>Ha Noi</h3>
+          <p>12 tours and activities</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ho Chi Minh -->
+    <div class="col-md-6 col-lg-3">
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="../src/img/tour-img/hcm-2.jpg" alt="Ho Chi Minh">
+        </div>
+        <div class="destination-info">
+          <h3>Ho Chi Minh</h3>
+          <p>9 tours and activities</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hoi An -->
+    <div class="col-md-6 col-lg-3">
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="../src/img/tour-img/hoian-2.jpg" alt="Hoi An">
+        </div>
+        <div class="destination-info">
+          <h3>Hoi An</h3>
+          <p>8 tours and activities</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lào -->
+    <div class="col-md-6 col-lg-3">
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="../src/img/tour-img/lao-2.jpg" alt="Lao">
+        </div>
+        <div class="destination-info">
+          <h3>Lao</h3>
+          <p>5 tours and activities</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sapa -->
+    <div class="col-md-6 col-lg-3">
+      <div class="destination-card">
+        <div class="destination-image">
+          <img src="../src/img/tour-img/sapa-2.jpg" alt="Sapa">
+        </div>
+        <div class="destination-info">
+          <h3>Sapa</h3>
+          <p>4 tours and activities</p>
+        </div>
+      </div>
+    </div>
+  </div>
   </main>
-  
 
   <!-- Footer -->
-  <footer class="footer">
-    <p class="footer__text">© 2025 Amie Travel. Tất cả các quyền được bảo lưu.</p>
+  <footer class="bg-grey py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About MTV Travel</h5>
+          <p>We provide unforgettable travel experiences across Southeast Asia with expert local guides and personalized
+            itineraries.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-envelope me-2"></i> moxumxue@gmail.com</li>
+            <li><i class="fas fa-phone me-2"></i> +84 123 4567890</li>
+            <li><i class="fas fa-map-marker-alt me-2"></i> 97 Man Thien St, Thu Duc City</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2025 MTV Travel. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
-  <script src="../src/sources/index.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
