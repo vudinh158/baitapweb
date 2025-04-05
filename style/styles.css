@@ -399,7 +399,6 @@ a {
   background-color: #e53d2d;
 }
 
-/* Styling cho danh sách tour */
 .main__tours-title {
   font-size: 28px;
   margin-bottom: 20px;
@@ -461,13 +460,9 @@ a {
 .flex-container {
   display: flex;
   flex-direction: column;
-  /* Đặt phần tử theo chiều dọc */
   justify-content: center;
-  /* Căn giữa các phần tử dọc theo trục chính */
   align-items: center;
-  /* Căn giữa các phần tử theo trục phụ */
   height: 300px;
-  /* Chiều cao của container */
   background-color: #f4f4f4;
 }
 
@@ -484,9 +479,7 @@ a {
 .bottom-left,
 .bottom-right {
   display: inline-block;
-  /* Để 2 box ở dưới có thể nằm ngang */
   width: 45%;
-  /* Chiếm 45% chiều rộng của container */
 }
 
 .flex-item {
@@ -658,13 +651,9 @@ footer {
   padding: 20px;
   border-radius: 10px;
   align-items: center;
-  /* Căn giữa nội dung theo chiều dọc */
   justify-content: center;
-  /* Căn giữa nội dung theo chiều ngang */
   width: 40%;
-  /* Chiếm 50% chiều rộng của container (2 cột) */
   height: max-content;
-  /* Chiếm 50% chiều cao của container (2 hàng) */
   background-color: #fff;
   color: #000;
   font-size: 10px;
